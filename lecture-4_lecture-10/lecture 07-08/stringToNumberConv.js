@@ -48,9 +48,8 @@ console.log("2" === 2);     // output = false; (because =, ==, === all of these 
 
 
 
-///===============Null ka mtlb 0 ni h empty ni h null ka mtlb h 1 totally empty==========
+///===============Null ka mtlb 0 ni h empty ni h null ka mtlb h totally empty==========
 
 
 
 
-//Run--->  node /workspaces/learn-javascript-in-depth/lecture-4_lecture-10/lecture\ 07/comparison.js
