@@ -102,4 +102,3 @@ console.log(typeof stringNumber);
 
 //-----------------------------------------------------------------------------------------
 
-//node /workspaces/learn-javascript-in-depth/lecture-4_lecture-10/lecture\ 06/conversionOperation.js
