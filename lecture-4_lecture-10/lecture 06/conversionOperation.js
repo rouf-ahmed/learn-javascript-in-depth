@@ -85,11 +85,21 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 console.log(booleanIsLoggedIn);         // o/p----false */
 
 
-/* Notes:--- 
+/* Notes:--- */
 // 1 => true
 // 0 => false
 // "" => false
 // "Rouf" => true
 
+let someNumber = 33
+
+let stringNumber =String(someNumber)
+console.log(stringNumber);
+console.log(typeof stringNumber);
+
+
+// o/p--- 33, string
+
+//-----------------------------------------------------------------------------------------
 
 //node /workspaces/learn-javascript-in-depth/lecture-4_lecture-10/lecture\ 06/conversionOperation.js
