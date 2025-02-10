@@ -61,4 +61,4 @@ console.log(url.includes('ariyan'));
 console.log(gameName.split('-'));
 
 
-// copy this for Run=> node /workspaces/learn-javascript-in-depth/lecture-10_lecture-20/lecture\ 11/string.js
+// copy this for Run=> node /workspaces/learn-javascript-in-depth/lecture-10_lecture-20/lecture\ 11/string.js //
