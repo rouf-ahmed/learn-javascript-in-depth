@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript backgroud color switcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="nav">
+    <nav>
+        <a href="https://www.linkedin.com/in/rouf-ahmed-412a23337/">LinkedIn</a>
+        <a href="https://github.com/rouf-ahmed">Github</a>
+      </nav>
+   </div>
+
+   <div class="container">
+    <h3>Javascript_Project-1</h3>
+    <h1>Color Sceme Switcher </h1>
+    <span class="button" id="pink"></span>
+    <span class="button" id="red"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id="green"></span> <br>
+    <h2>Try clicking on one of the colors above
+        <span>to change the backgroud color of this page !</span>
+    </h2>
+   </div>
+
+   <footer>
+    <span>~Rouf</span>
+   </footer>
+
+   <script>
+    const buttons = 
+     document.querySelectorAll('.button');
+     //Select all elements with the class 'button' (color option)
+    const body = 
+    document.querySelector('body');
+    //select the body element to change it background color
+
+
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(event){
+            body.style.backgroundColor = event.target.id;
+                // set background color based on button id
+            });
+        });
+   </script>
+</body>
+</html>
