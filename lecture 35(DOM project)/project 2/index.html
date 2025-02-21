@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="projectno">Javascript_Project-2</div>
+  
+<div class="container">
+  <h1>BMI Calculator</h1>
+  <form>
+     <label for="height">Height in CM :</label>
+     <input type="text" id="height">
+     <br>
+     <label for="weight">Weight in CM :</label>
+     <input type="text" id="weight">
+     <br>
+     <button>Calculate</button>
+     <div id="result"></div>
+ 
+     <div class="weight-guide">
+         <h3>BMI Weight Guide</h3>
+         <p>Under Weight = less than 18.6</p>
+         <p>Normal Range = 18.6 and 24.9</p>
+         <p>Over Weight = Greater than 24.9</p>
+     </div>
+  </form>
+</div>
+
+ <script>
+    const form = document.querySelector('form')
+    form.addEventListener('submit', function(event){
+        event.preventDefault()
+
+      const height = parseInt (document.querySelector('#height').value);
+      const weight = parseInt (document.querySelector('#weight').value);
+      const result = document.querySelector('#result');
+
+      if( isNaN(height || height<=0 )){
+        result.innerHTML = `please give a valid height`;
+        return;  //exit the function early
+      }
+
+      if( weight<=0 || isNaN(weight)){
+        result.innerHTML = `please give a valid weight`;
+        return;   //exit the function early
+      }
+
+      //calculate BMI
+      const bmi = (weight / (height * height / 10000)).toFixed(2);
+      result.innerHTML = `Your BMI is ${bmi}`;
+
+      //determine the BMI category
+      if (bmi <18.6){
+        result.innerHTML += `<br>Underqwight`;
+      }
+      else if (bmi>=18.6 && bmi <= 24.9){
+        result.innerHTML += `<br>Normal range`;
+      }
+
+      else {
+        result.innerHTML += `<br>Overweight`;
+      }
+    })
+
+ </script>
+</body>
+</html>
