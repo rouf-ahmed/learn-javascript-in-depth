@@ -1,0 +1,80 @@
+Number Guessing Game - Project Summary
+
+Overview
+
+This project is a simple Number Guessing Game built using HTML, CSS, and JavaScript. The game generates a random number between 1 and 100, and the player has 10 attempts to guess it correctly.
+
+
+---
+
+What I Learned
+
+1. JavaScript Fundamentals:
+
+Generating a random number using Math.random().
+
+Handling user input with querySelector and addEventListener.
+
+Using arrays to store previous guesses.
+
+Implementing conditional statements (if-else) to check the user's guess.
+
+
+2. DOM Manipulation:
+
+Updating elements dynamically using .innerHTML.
+
+Adding and removing elements with appendChild() and removeChild().
+
+Enabling and disabling input fields with setAttribute() and removeAttribute().
+
+
+3. Event Handling:
+
+Listening for user input and handling button clicks.
+
+Preventing default form submission using event.preventDefault().
+
+
+4. Styling with CSS:
+
+Adding a background only around text using display: inline-block.
+
+Styling buttons and text for better UI/UX.
+
+Using classList.add() to dynamically apply CSS styles.
+
+
+5. Game Logic & State Management:
+
+Keeping track of guesses remaining and updating the UI.
+
+Displaying helpful messages ("Too High", "Too Low", "You Guessed Right!").
+
+Implementing a restart feature that resets all game variables.
+
+
+
+---
+
+Key Features of the Game
+
+✔ Generates a random number between 1 and 100.
+✔ Tracks previous guesses and displays them.
+✔ Provides hints if the guess is too high or too low.
+✔ Allows only 10 attempts before the game ends.
+✔ Includes a "Start New Game" button to restart the game.
+
+
+---
+
+Future Improvements
+
+🔹 Add animations for better user experience.
+🔹 Implement a timer or difficulty levels.
+🔹 Use LocalStorage to save game progress.
+
+
+---
+
+This project helped reinforce my understanding of JavaScript logic, event handling, and DOM manipulation while improving my CSS styling skills.
