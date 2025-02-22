@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: #00000054; */
+    align-items: center;
+    text-align: center;
+}
+
+.projectno{
+    font-size: 30px;
+    margin-top: 150px;
+    line-height: 1.2;
+    font-family: cursive;
+    color: rgb(116, 11, 11);
+}
+
+.center{
+    margin-top: 55px;
+}
+span{
+   font-size: 30px;
+   font-style: italic;
+   font-weight: bolder;
+   color: rgb(40, 10, 191);
+}
+
+#clock{
+    color:rgb(7, 112, 7);
+    font-size: 30px;
+    padding: 20px 50px;
+    font-weight: 500;
+
+}

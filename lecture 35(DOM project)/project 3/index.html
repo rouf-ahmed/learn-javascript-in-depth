@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="projectno">Javascript_Project-3</div>
+    <!-- ...... -->
+
+    <div class="center">
+        <span>Your Local Time</span>
+        <div id="clock"></div>
+    </div>
+
+
+    
+    <script>
+    const clock = document.getElementById("clock");
+    
+    // It will give result at one time..
+    // let date = new Date();
+    // console.log(date.toLocaleTimeString());
+    
+    // But I want hr interval pr new time deta jye so i will use interval function:
+    
+    setInterval( function() {
+        let date = new Date();
+        // console.log(date.toLocaleTimeString());
+        clock.innerHTML = date.toLocaleTimeString();
+    }, 1000)
+    </script>
+</body>
+</html>
