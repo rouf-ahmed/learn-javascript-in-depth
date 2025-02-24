@@ -1,0 +1,58 @@
+JavaScript Async :
+
+1. Synchronous vs Asynchronous
+
+Synchronous: Executes line by line; blocks next execution.
+
+Asynchronous: Executes without waiting; non-blocking.
+
+
+Example:
+
+console.log("Start");  
+setTimeout(() => console.log("Async Task"), 2000);  
+console.log("End");
+
+Output:
+
+Start  
+End  
+Async Task (after 2 sec)
+
+2. Callbacks
+
+A function passed into another function to execute later.
+
+function fetchData(callback) {
+  setTimeout(() => {
+    console.log("Data fetched");
+    callback();
+  }, 2000);
+}
+fetchData(() => console.log("Processing data..."));
+
+Issue: Callback Hell (nested functions are hard to read).
+
+3. Promises
+
+A Promise handles async tasks more cleanly.
+
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("Success!"), 2000);
+});
+
+promise.then(result => console.log(result)).catch(error => console.log(error));
+
+States: pending → fulfilled / rejected
+
+4. Async/Await (Modern Approach)
+
+Simplifies Promises with cleaner syntax.
+
+async function fetchData() {
+  let data = await new Promise(resolve => setTimeout(() => resolve("Data loaded"), 2000));
+  console.log(data);
+}
+fetchData();
+
+✅ Use async/await for better readability!
